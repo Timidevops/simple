@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class DBUtil {
-    private static final String URL = "jdbc:mysql://dbweb.c10csoc8mw1v.us-east-2.rds.amazonaws.com:3306/dbweb";
+    private static final String URL = "jdbc:mysql://dbweb:3306/dbweb";
     private static final String USER = "admin";
     private static final String PASS = "admin123";
 
