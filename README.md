@@ -27,5 +27,5 @@ DB_USER=timi
 DB_PASS=rootpass
 ```
 
-> Note: Passwords are plain text for demo parity. Do not use in production.
+> Note: Passwords are plain text for demo parity. Never use in production.
 
