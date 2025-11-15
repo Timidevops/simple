@@ -7,7 +7,7 @@ pipeline {
     }
 
     environment {
-        IMAGE        = "timidevops/userportal:1.1"
+        IMAGE        = "timidevops/userportal"
         KUBE_NAMESPACE = "default"
         KUBE_DEPLOYMENT = "tomcat"
 
