@@ -35,7 +35,7 @@
 <div class="row align-items-center g-4">
   <div class="col-lg-6">
     <h1 class="display-5 fw-bold text-gradient">Welcome to your DevOps User Portal</h1>
-    <p class="lead text-secondary">Sign in to access your dashboard, manage your profile, and explore system insights.</p>
+    <p class="lead text-secondary">Sign in to access your dashboard, manage your profile, and explore system insights anytime.</p>
     <div class="d-flex gap-3">
       <a href="login.jsp" class="btn btn-primary btn-lg"><i class="fa-solid fa-right-to-bracket me-2"></i>Login</a>
       <a href="register.jsp" class="btn btn-outline-light btn-lg"><i class="fa-solid fa-user-plus me-2"></i>Register</a>
