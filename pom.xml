@@ -55,4 +55,11 @@
             </plugin>
         </plugins>
     </build>
+<distributionManagement>
+    <repository>
+        <id>nexus</id>
+        <url>http://18.117.178.164:8081/repository/userportal-war-artifact/</url>
+    </repository>
+</distributionManagement>
+
 </project>
