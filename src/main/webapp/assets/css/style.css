@@ -1,0 +1,27 @@
+
+:root{
+  --brand:#0ea5e9;
+  --brand-2:#14b8a6;
+}
+.bg-gradient{
+  background: radial-gradient(1200px 600px at -10% -10%, rgba(20,184,166,.2), transparent 40%),
+              radial-gradient(1000px 500px at 110% 10%, rgba(14,165,233,.2), transparent 40%),
+              #0b0f14;
+  min-height:100vh;
+}
+.text-gradient{
+  background: linear-gradient(45deg, var(--brand), var(--brand-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.glass, .card-glass{
+  background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+  border: 1px solid rgba(255,255,255,.08);
+  backdrop-filter: blur(8px);
+}
+.bg-dark-90{ background-color: rgba(15,17,23,.9); }
+.bg-dark-80{ background-color: rgba(15,17,23,.8); }
+.navbar.bg-dark-90{ background-color: rgba(15,17,23,.9) !important; }
+.min-vh-60{ min-height: 60vh; }
+.kpi{ background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02)); border:1px solid rgba(255,255,255,.08); }
