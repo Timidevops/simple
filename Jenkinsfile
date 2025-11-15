@@ -56,7 +56,7 @@ pipeline {
             }
         }
 
-
+/*
         stage('Upload WAR to Nexus') {
             steps {
                 echo "Uploading WAR to Nexus..."
@@ -68,7 +68,7 @@ pipeline {
                 """
             }
         } 
-
+*/
 
 
         stage('Build Docker Image') {
