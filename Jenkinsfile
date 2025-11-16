@@ -56,19 +56,24 @@ pipeline {
             }
         }
 
-/*
         stage('Upload WAR to Nexus') {
-            steps {
-                echo "Uploading WAR to Nexus..."
-                sh """
-                mvn deploy \
-                   -DaltDeploymentRepository=nexus::default::http://18.117.178.164:8081/repository/userportal-war-artifact/ \
-                   -Dnexus.username=${NEXUS_USR} \
-                   -Dnexus.password=${NEXUS_PSW}
-                """
-            }
-        } 
-*/
+    steps {
+        echo "Uploading WAR to Nexus..."
+
+        withCredentials([usernamePassword(
+            credentialsId: 'nexus-creds',
+            usernameVariable: 'NEXUS_USR',
+            passwordVariable: 'NEXUS_PSW'
+        )]) {
+
+            sh """
+                mvn -s /var/lib/jenkins/.m2/settings.xml deploy \
+                -DaltDeploymentRepository=nexus::default::http://18.117.178.164:8081/repository/userportal-war-artifact/
+            """
+        }
+    }
+}
+
 
 
         stage('Build Docker Image') {
