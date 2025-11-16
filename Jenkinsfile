@@ -61,18 +61,19 @@ pipeline {
         echo "Uploading WAR to Nexus..."
 
         withCredentials([usernamePassword(
-            credentialsId: 'nexus-creds',
+            credentialsId: 'nexus',
             usernameVariable: 'NEXUS_USR',
             passwordVariable: 'NEXUS_PSW'
         )]) {
 
             sh """
                 mvn -s /var/lib/jenkins/.m2/settings.xml deploy \
-                -DaltDeploymentRepository=nexus::default::http://18.117.178.164:8081/repository/userportal-war-artifact/
+                    -DaltDeploymentRepository=nexus::default::http://18.117.178.164:8081/repository/userportal-war-artifact/
             """
         }
     }
 }
+
 
 
 
