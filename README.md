@@ -1,4 +1,4 @@
-# DevOps User Portal (Dark Theme) -- for deployment practice
+# DevOps User Portal (Dark Theme) -- for deployment practice (JAVA BASED WEBAPP)
 
 Modern, Bootstrap-styled JSP/Servlet portal with Login, Register, and Dashboard.
 
